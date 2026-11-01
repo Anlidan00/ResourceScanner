@@ -1,0 +1,42 @@
+{
+  "result": "PASS_SOURCE_REVIEW_BUILDS",
+  "version": "5.0.8",
+  "native_build": "MSVC 19.44.35229.0, x64 Release, original core CMake and frozen loader project",
+  "installer_build": "Framework64/v4.0.30319/csc.exe, original C# source and original validated embedded payload",
+  "published_payload_files_verified": 33,
+  "release_source_files_verified": 114,
+  "native_comparison": [
+    {
+      "file": "ResourceScannerCore.dll",
+      "compiled_bytes": 1394176,
+      "compiled_sha256": "47876593939085cf1c9bbc24cdfc984d431aa66bfe27b86e6b78bd65d3301fc7",
+      "published_sha256": "6fcf8d88591512e0087c41f2e8e515b8cd9b2763829c868d813a419471a9b39a",
+      "section_equality": {
+        ".text": true,
+        ".rdata": false,
+        ".data": false,
+        ".pdata": true,
+        ".fptable": true,
+        ".rsrc": true,
+        ".reloc": true
+      }
+    },
+    {
+      "file": "vulkan-1.dll",
+      "compiled_bytes": 203264,
+      "compiled_sha256": "8e88023db7b6c9d3a8ffd412b5c34dabb107100d8ed90fcca6a9240d4c16d6e4",
+      "published_sha256": "c49c0384e83ac72fae431759d29a8787d3f27e48ebbb6bbf4d8d2620a3d0e216",
+      "section_equality": {
+        ".text": true,
+        ".rdata": false,
+        ".data": true,
+        ".pdata": true,
+        ".fptable": true,
+        ".rsrc": true,
+        ".reloc": true
+      }
+    }
+  ],
+  "game_launched": false,
+  "game_or_save_files_accessed": false
+}
