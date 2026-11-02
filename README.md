@@ -1,29 +1,27 @@
-# Resource Scanner 5.0.8 — source review
+# Resource Scanner 5.0.9
 
-Source code and build information for the Enshrouded mod:
+Adds an item catalog linked to the in-game map in Enshrouded. Select a resource to see its gathering sources.
 
-https://www.nexusmods.com/enshrouded/mods/285
+## Download
 
-## Complete source package
+The installable mod package is **Resource_Scanner_5.0.9.zip** under the [Releases](https://github.com/Anlidan00/ResourceScanner/releases) section. Extract it and run the installer with Enshrouded closed.
 
-Download [ResourceScanner_Source_5.0.8_review.zip](ResourceScanner_Source_5.0.8_review.zip) and extract it before following [BUILD.md](BUILD.md). The archive contains the complete source-review tree: native core, frozen published loader, Python helper, original C# installer, translations, pinned dependency retrieval, source/payload hashes and build scripts. It contains no executable binaries or game artwork.
+The installer can update versions **5.0.8 and newer** without uninstalling them first. Selected items and interface visibility are preserved. You can also choose the key that hides and shows the Scanner; Insert is the default.
 
-The ZIP preserves the project paths used by the build scripts. Source archive SHA-256:
+Version 5.0.9 adapts the map, discovery progress, zoom and waypoints for Enshrouded 1283531. Offline checks passed. The author has tested version 5.0.9 in-game.
 
-```text
-55abd85aa983fde61385984359f24570e20a3d2d9d581f4822d0ca0d9545da96
-```
+## Source and review
 
-## Verification
+See [BUILD.md](BUILD.md) for build instructions and [SECURITY_REVIEW.md](SECURITY_REVIEW.md) for installation, proxy/hook and helper behavior. The source tree includes the native core, retained loader, Python helper and original C# installer with 15-language translations.
 
-- 114 included original source/font files are bound by SHA-256.
-- All 33 installed payload files were checked against the published installer.
-- The installer was rebuilt from the included C# source against the validated original embedded payload.
-- The core and retained Vulkan loader built successfully with MSVC x64 Release. Their `.text` sections match the corresponding published DLLs. Complete PE hashes can differ; a bit-for-bit reproducible build is not claimed.
-- See [review_build.json](review_build.json), [artifact_hashes.json](artifact_hashes.json) and [SECURITY_REVIEW.md](SECURITY_REVIEW.md).
+- 94 source/font files are bound by SHA-256.
+- All 33 payload files are verified against the installer.
+- The native core and retained loader rebuild successfully; their `.text` sections match the packaged DLLs. Full binary reproducibility is not claimed.
+- The installer rebuilds from the included C# code using its validated embedded payload.
+- Checks and hashes: [review_build.json](review_build.json), [artifact_hashes.json](artifact_hashes.json).
 
-## Notices
+Game artwork, portraits, packed catalog assets and executable binaries are not included in this source tree. Upstream source downloads are a development build step; the mod and installer do not download dependencies at runtime.
 
-Third-party software, fonts and method-icon notices are retained in [Third_Party_Licenses.txt](Third_Party_Licenses.txt) and inside the source archive. Game artwork, creature portraits and packed world-catalog assets are not hosted here. The installer review script reads the validated payload from the existing published installer without executing it.
+[Third-party licenses](Third_Party_Licenses.txt). Development used OpenAI Codex for code and translations.
 
-The development process used OpenAI Codex for code and translations.
+Complete source archive: [ResourceScanner_Source_5.0.9_review.zip](ResourceScanner_Source_5.0.9_review.zip). SHA-256: `4364409ef58bf85b095ecdddc7f5a1875707c610fe6598e419b180adf64e8a00`.

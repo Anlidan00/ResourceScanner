@@ -1,42 +1,34 @@
 {
-  "result": "PASS_SOURCE_REVIEW_BUILDS",
-  "version": "5.0.8",
-  "native_build": "MSVC 19.44.35229.0, x64 Release, original core CMake and frozen loader project",
-  "installer_build": "Framework64/v4.0.30319/csc.exe, original C# source and original validated embedded payload",
-  "published_payload_files_verified": 33,
-  "release_source_files_verified": 114,
-  "native_comparison": [
-    {
-      "file": "ResourceScannerCore.dll",
-      "compiled_bytes": 1394176,
-      "compiled_sha256": "47876593939085cf1c9bbc24cdfc984d431aa66bfe27b86e6b78bd65d3301fc7",
-      "published_sha256": "6fcf8d88591512e0087c41f2e8e515b8cd9b2763829c868d813a419471a9b39a",
-      "section_equality": {
-        ".text": true,
-        ".rdata": false,
-        ".data": false,
-        ".pdata": true,
-        ".fptable": true,
-        ".rsrc": true,
-        ".reloc": true
-      }
+  "version": "5.0.9",
+  "production_build": "PASS; 9 CTest cases",
+  "native_compatibility": "PASS; old1273043 and current1283531 disk layouts,57 resolver checks,171 tracking,37 zoom,16 adapter",
+  "runtime_compatibility": "PASS;78 disk/synthetic checks",
+  "visibility_key": "PASS;106 allowed keys,1580 UI checks,105 actual hidden Win32/search checks",
+  "installer": "PASS;5023 hotkey/UI checks and211 upgrade checks across43 fixtures",
+  "actual_published_payload": "PASS; both embedded33-file payloads and41 actual-package upgrade/reinstall/uninstall assertions",
+  "game_tested": true,
+  "portable_native_rebuild": "PASS",
+  "portable_installer_rebuild": "PASS; all33 payload entries validated, C# recompiled using embedded payload without executing installer",
+  "bit_for_bit_binary_reproducibility_claimed": false,
+  "native_comparison": {
+    "ResourceScannerCore.dll": {
+      "rebuilt_bytes": 1417728,
+      "rebuilt_sha256": "026b5d7f16b2fab1cfbb5e6987f1a90579367e73991b2b2d5a0aee275776cdc5",
+      "text_section_identical": true,
+      "text_sha256": "7120f1e2a943d865611f5c4bd78a303565f9211fbe2a119b70260ba5b1ffac85"
     },
-    {
-      "file": "vulkan-1.dll",
-      "compiled_bytes": 203264,
-      "compiled_sha256": "8e88023db7b6c9d3a8ffd412b5c34dabb107100d8ed90fcca6a9240d4c16d6e4",
-      "published_sha256": "c49c0384e83ac72fae431759d29a8787d3f27e48ebbb6bbf4d8d2620a3d0e216",
-      "section_equality": {
-        ".text": true,
-        ".rdata": false,
-        ".data": true,
-        ".pdata": true,
-        ".fptable": true,
-        ".rsrc": true,
-        ".reloc": true
-      }
+    "vulkan-1.dll": {
+      "rebuilt_bytes": 203264,
+      "rebuilt_sha256": "4ebdf832a45cf91acc1beb0e571ad9a2fff31cf962c903ac317b6bd544a8573d",
+      "text_section_identical": true,
+      "text_sha256": "42fbe17e6a01b03c20d89a163649bf4e17cd0c1a3f6d9e10211cb4b688610a19"
     }
-  ],
-  "game_launched": false,
-  "game_or_save_files_accessed": false
+  },
+  "dependency_verification": "Pinned original source files supplied from locally verified upstream sources; same fetch script provided for a clean network build.",
+  "game_test_report": {
+    "reported_by": "author",
+    "reported_on": "2026-11-02",
+    "agent_launched_game": false
+  },
+  "installed_for_automated_review": false
 }

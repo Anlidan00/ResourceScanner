@@ -2,7 +2,7 @@
 
 ## Installer
 
-The published EXE is a Windows Forms C# installer containing the mod payload and 15-language installer strings as managed resources. `installer/InstallCore.cs` implements package verification, target-path checks, installation, ownership records, rollback and uninstallation. `installer/SetupUi.cs` implements the interface. It operates on the selected Enshrouded installation directory. It has no automatic updater, telemetry or dependency downloader.
+The published EXE is a Windows Forms C# installer containing the mod payload and 15-language installer strings as managed resources. `installer/InstallCore.cs` implements package verification, target-path checks, installation, ownership records, rollback and uninstallation. `installer/SetupUi.cs` implements the interface. It operates on the selected Enshrouded installation directory. Valid ownership records from versions 5.0.8 and later support installation over an existing version. Replaced/removed files are checked against their recorded hashes; failures roll back touched files. Selected items and interface visibility are preserved. The installer also records the chosen visibility key in settings.ini. It has no automatic updater, telemetry or dependency downloader.
 
 ## Native integration
 
@@ -14,6 +14,6 @@ The helper is started by the native core for the current game instance. It reads
 
 ## Published artifact mapping
 
-The 5.0.8 payload contains the current 5.0.8 core and an earlier retained, tested proxy binary. The exact retained proxy source and generated forwarders are included under `loader/`. Its source SHA-256 was restored and verified against the original build record. Both original artifact hashes are listed in `release/artifact_hashes.json`.
+The 5.0.9 payload contains the current 5.0.9 core and an earlier retained, tested proxy binary. The exact retained proxy source and generated forwarders are included under `loader/`. Its source SHA-256 was restored and verified against the original build record. Both original artifact hashes are listed in `release/artifact_hashes.json`.
 
 This document describes intended operations for examination. It does not assert a VirusTotal verdict or replace a Nexus security review.
