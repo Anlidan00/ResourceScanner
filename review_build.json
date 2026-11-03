@@ -7,7 +7,7 @@
   "runtime_compatibility": "PASS; 356 disk/synthetic/inert checks, including 48 using the packaged Python",
   "installer": "PASS; 5023 UI/key/translation checks; 233 upgrade checks across 44 inert fixtures",
   "actual_published_payload": "PASS; all 33 files and both embedded resources match; 41 actual-package upgrade/reinstall/uninstall assertions",
-  "game_tested": false,
+  "game_tested": true,
   "agent_launched_game": false,
   "installed_for_automated_review": false,
   "portable_native_rebuild": "PASS",
@@ -27,5 +27,18 @@
       "text_sha256": "42fbe17e6a01b03c20d89a163649bf4e17cd0c1a3f6d9e10211cb4b688610a19"
     }
   },
-  "dependency_verification": "288 pinned upstream source files matched their recorded official source hashes; same fetch script included for a clean build"
+  "dependency_verification": "288 pinned upstream source files matched their recorded official source hashes; same fetch script included for a clean build",
+  "game_test_report": {
+    "version": "5.0.11",
+    "game_tested": true,
+    "reported_by": "author",
+    "reported_on": "2026-11-03",
+    "game_version": 1285601,
+    "agent_launched_game": false,
+    "installer_sha256": "42ce7fb585dd7da3ac37d9e5b1bfd37e2dbad2a036b880ed8d735e490108dad4",
+    "mod_archive_sha256": "cf772903cf782c6340ab36220af25ffe53a35b62593868090217090a6c047fc9",
+    "source_commit": "0f91eb72cae25599bec1bbaf2ced5755673ac436",
+    "source_archive_sha256": "3676ae76174057300ae5e296784331238c2f8768c1c2f1d0347e3d43a960425a",
+    "scope": "The author reported checking version 5.0.11 in-game. No detailed gameplay test matrix was supplied. This supplements the frozen offline source-review snapshot."
+  }
 }

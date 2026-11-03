@@ -27,7 +27,7 @@ See [BUILD.md](BUILD.md) for build instructions and [SECURITY_REVIEW.md](SECURIT
 - The installer can be rebuilt from its included C# source using the validated published payload.
 - Artifact hashes: [artifact_hashes.json](artifact_hashes.json).
 
-Offline checks passed. Version 5.0.11 has not been tested in-game by the agent. Full binary reproducibility is not claimed.
+Offline checks passed. The author reported testing version 5.0.11 in-game on 2026-11-03; see [GAME_TEST_REPORT.json](GAME_TEST_REPORT.json). The agent did not launch the game. Full binary reproducibility is not claimed.
 
 Game artwork, portraits, packed catalog assets and executable binaries are outside this source archive. Upstream source downloads are a development build step; the mod and installer do not download dependencies at runtime.
 
