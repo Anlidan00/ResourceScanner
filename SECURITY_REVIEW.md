@@ -14,6 +14,6 @@ The helper is started by the native core for the current game instance. It reads
 
 ## Published artifact mapping
 
-The 5.0.9 payload contains the current 5.0.9 core and an earlier retained, tested proxy binary. The exact retained proxy source and generated forwarders are included under `loader/`. Its source SHA-256 was restored and verified against the original build record. Both original artifact hashes are listed in `release/artifact_hashes.json`.
+The 5.0.11 payload contains the current 5.0.11 core and an earlier retained, tested proxy binary. The exact retained proxy source and generated forwarders are included under `loader/`. Its source SHA-256 was restored and verified against the original build record. Both original artifact hashes are listed in `release/artifact_hashes.json`.
 
 This document describes intended operations for examination. It does not assert a VirusTotal verdict or replace a Nexus security review.

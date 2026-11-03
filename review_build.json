@@ -1,34 +1,31 @@
 {
-  "version": "5.0.9",
+  "version": "5.0.11",
+  "game_version": 1285601,
+  "game_exe_sha256": "ce6fdba63e27744943b695921383a29133285d359e07671f6ca33a47e2147618",
   "production_build": "PASS; 9 CTest cases",
-  "native_compatibility": "PASS; old1273043 and current1283531 disk layouts,57 resolver checks,171 tracking,37 zoom,16 adapter",
-  "runtime_compatibility": "PASS;78 disk/synthetic checks",
-  "visibility_key": "PASS;106 allowed keys,1580 UI checks,105 actual hidden Win32/search checks",
-  "installer": "PASS;5023 hotkey/UI checks and211 upgrade checks across43 fixtures",
-  "actual_published_payload": "PASS; both embedded33-file payloads and41 actual-package upgrade/reinstall/uninstall assertions",
-  "game_tested": true,
+  "native_compatibility": "PASS; old1273043/current1285601 disk images; 137 resolver/layout checks, 181 tracking, 37 zoom, 13 observer lifecycle, saved UI trees 16/28/37",
+  "runtime_compatibility": "PASS; 356 disk/synthetic/inert checks, including 48 using the packaged Python",
+  "installer": "PASS; 5023 UI/key/translation checks; 233 upgrade checks across 44 inert fixtures",
+  "actual_published_payload": "PASS; all 33 files and both embedded resources match; 41 actual-package upgrade/reinstall/uninstall assertions",
+  "game_tested": false,
+  "agent_launched_game": false,
+  "installed_for_automated_review": false,
   "portable_native_rebuild": "PASS",
-  "portable_installer_rebuild": "PASS; all33 payload entries validated, C# recompiled using embedded payload without executing installer",
+  "portable_installer_rebuild": "PASS; all 33 payload files validated; C# recompiled without executing installer",
   "bit_for_bit_binary_reproducibility_claimed": false,
   "native_comparison": {
     "ResourceScannerCore.dll": {
-      "rebuilt_bytes": 1417728,
-      "rebuilt_sha256": "026b5d7f16b2fab1cfbb5e6987f1a90579367e73991b2b2d5a0aee275776cdc5",
+      "rebuilt_bytes": 1422848,
+      "rebuilt_sha256": "b6296020b53ebb25bfcef89e0dc4674914fd3f1709cd22b50cd5279a28689a81",
       "text_section_identical": true,
-      "text_sha256": "7120f1e2a943d865611f5c4bd78a303565f9211fbe2a119b70260ba5b1ffac85"
+      "text_sha256": "ff19f8f208b832a1b22567ce6a294b01d9d0e1a06c4cb9ab8f2cc66f65e1a313"
     },
     "vulkan-1.dll": {
       "rebuilt_bytes": 203264,
-      "rebuilt_sha256": "4ebdf832a45cf91acc1beb0e571ad9a2fff31cf962c903ac317b6bd544a8573d",
+      "rebuilt_sha256": "afa235a88db03eef41409f2caa5373d016583335cec14b2aa065514c59f9ace2",
       "text_section_identical": true,
       "text_sha256": "42fbe17e6a01b03c20d89a163649bf4e17cd0c1a3f6d9e10211cb4b688610a19"
     }
   },
-  "dependency_verification": "Pinned original source files supplied from locally verified upstream sources; same fetch script provided for a clean network build.",
-  "game_test_report": {
-    "reported_by": "author",
-    "reported_on": "2026-11-02",
-    "agent_launched_game": false
-  },
-  "installed_for_automated_review": false
+  "dependency_verification": "288 pinned upstream source files matched their recorded official source hashes; same fetch script included for a clean build"
 }

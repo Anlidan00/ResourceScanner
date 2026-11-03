@@ -1,4 +1,4 @@
-# Building and reviewing version 5.0.9
+# Building and reviewing version 5.0.11
 
 ## Requirements
 
@@ -16,7 +16,7 @@ From the repository root:
 python -B scripts/verify_sources.py
 ```
 
-`release/source_hashes.json` binds the included original source and font bytes. The native source hashes were checked against the recorded 5.0.9 build. The retained loader uses its original source snapshot; its difference from the later working copy is a leading comment and line endings, not behavior.
+`release/source_hashes.json` binds the included original source and font bytes. The native source hashes were checked against the recorded 5.0.11 build. The retained loader uses its original source snapshot; its difference from the later working copy is a leading comment and line endings, not behavior.
 
 ## Build the native core and retained loader
 
@@ -35,10 +35,10 @@ The original core CMake project is retained under `native/`. `BUILD_TESTING=OFF`
 
 ## Rebuild the installer against the published payload
 
-Obtain `Resource_Scanner_Setup_5.0.9.exe` from the uploaded `Resource_Scanner_5.0.9.zip`. A Nexus reviewer can use the file already held in quarantine. Place the EXE outside the repository, then run:
+Obtain `Resource_Scanner_Setup_5.0.11.exe` from the uploaded `Resource_Scanner_5.0.11.zip`. A Nexus reviewer can use the file already held in quarantine. Place the EXE outside the repository, then run:
 
 ```powershell
-python -B scripts/build_installer_for_review.py "C:/review-input/Resource_Scanner_Setup_5.0.9.exe"
+python -B scripts/build_installer_for_review.py "C:/review-input/Resource_Scanner_Setup_5.0.11.exe"
 ```
 
 The script verifies the original EXE hash, reads its managed PE resources without loading or running it, checks every packaged file against `release/payload_manifest.json`, and recompiles `InstallCore.cs` and `SetupUi.cs` with the original package and translations as embedded resources. Output: `build/installer/ResourceScannerSetup.review.exe`.

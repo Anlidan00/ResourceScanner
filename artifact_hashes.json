@@ -1,15 +1,15 @@
 {
-  "Resource_Scanner_Setup_5.0.9.exe": {
-    "bytes": 39272960,
-    "sha256": "65b8d606f0de8b7fdccb8cbc9f096284ede182903368d28c2b4c2802a68a08fb"
+  "Resource_Scanner_Setup_5.0.11.exe": {
+    "bytes": 39278080,
+    "sha256": "42ce7fb585dd7da3ac37d9e5b1bfd37e2dbad2a036b880ed8d735e490108dad4"
   },
-  "Resource_Scanner_5.0.9.zip": {
-    "bytes": 39153146,
-    "sha256": "d38ab0ae87416ef1fa1a50bc618378fddf7735ac275fd707de30b906164b3de6"
+  "Resource_Scanner_5.0.11.zip": {
+    "bytes": 39158876,
+    "sha256": "cf772903cf782c6340ab36220af25ffe53a35b62593868090217090a6c047fc9"
   },
   "ResourceScannerCore.dll": {
-    "bytes": 1417728,
-    "sha256": "f5dddb02edb64fb9b69c043ffc4b554e9cfbdef2f1f4359fde51de6c91f96d1c"
+    "bytes": 1422848,
+    "sha256": "fb2e901ace322d19e0554725f8c145e694ff9715d1061e06c61b770435b2215a"
   },
   "vulkan-1.dll": {
     "bytes": 203264,
